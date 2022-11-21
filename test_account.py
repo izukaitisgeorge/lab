@@ -9,7 +9,12 @@ class Test:
         assert self.test_account.get_balance() == 0
 
     def test_deposit(self):
-        assert self.test_account
+        assert self.test_account.deposit(1.1) == True
+        assert self.test_account.deposit(0) == False
+        assert self.test_account.deposit(-1) == False
 
     def test_withdrawal(self):
+         assert self.test_account.deposit(1.1) == True
+        assert self.test_account.deposit(0) == False
+        assert self.test_account.deposit(-1) == False
 
